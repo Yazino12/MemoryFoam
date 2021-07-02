@@ -1,17 +1,31 @@
+<<<<<<< HEAD
 import { START_LOADING, END_LOADING, FETCH_ALL, FETCH_POST, FETCH_BY_SEARCH, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
 import * as api from '../api/index.js';
 
 export const getPost = (id) => async (dispatch) => {
+=======
+import { CREATE, UPDATE, DELETE, FETCH_ALL } from "../constants/actionTypes";
+import * as api from "../api";
+
+//Action Creators
+export const getPosts = () => async (dispatch) => {
+>>>>>>> parent of eb89913... pushing PART_3
   try {
     dispatch({ type: START_LOADING });
 
+<<<<<<< HEAD
     const { data } = await api.fetchPost(id);
 
     dispatch({ type: FETCH_POST, payload: { post: data } });
   } catch (error) {
     console.log(error);
+=======
+    dispatch({ type: FETCH_ALL, payload: data});
+  } catch (err) {
+    console.log(err.mesage);
+>>>>>>> parent of eb89913... pushing PART_3
   }
-};
+}
 
 export const getPosts = (page) => async (dispatch) => {
   try {
@@ -43,41 +57,48 @@ export const createPost = (post, history) => async (dispatch) => {
     const { data } = await api.createPost(post);
 
     dispatch({ type: CREATE, payload: data });
+<<<<<<< HEAD
 
     history.push(`/posts/${data._id}`);
   } catch (error) {
     console.log(error);
+=======
+  } catch (err) {
+    console.log(err);
+>>>>>>> parent of eb89913... pushing PART_3
   }
-};
+}
 
 export const updatePost = (id, post) => async (dispatch) => {
   try {
     const { data } = await api.updatePost(id, post);
 
     dispatch({ type: UPDATE, payload: data });
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
   }
-};
-
-export const likePost = (id) => async (dispatch) => {
-  const user = JSON.parse(localStorage.getItem('profile'));
-
-  try {
-    const { data } = await api.likePost(id, user?.token);
-
-    dispatch({ type: LIKE, payload: data });
-  } catch (error) {
-    console.log(error);
-  }
-};
+}
 
 export const deletePost = (id) => async (dispatch) => {
   try {
-    await await api.deletePost(id);
+    await api.deletePost(id);
 
     dispatch({ type: DELETE, payload: id });
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
   }
+}
+
+export const likePost = (id) => async (dispatch) => {
+  try {
+    const { data } = await api.likePost(id);
+
+    dispatch({ type: UPDATE, payload: data });
+  } catch (err) {
+    console.log(err);
+  }
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> parent of eb89913... pushing PART_3

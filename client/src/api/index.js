@@ -1,5 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
 
+<<<<<<< HEAD
 const API = axios.create({ baseURL: 'http://localhost:5000' });
 
 API.interceptors.request.use((req) => {
@@ -20,3 +21,12 @@ export const deletePost = (id) => API.delete(`/posts/${id}`);
 
 export const signIn = (formData) => API.post('/user/signin', formData);
 export const signUp = (formData) => API.post('/user/signup', formData);
+=======
+const url = "https://memory-foam.herokuapp.com/posts";
+
+export const fetchPosts = () => axios.get(url);
+export const createPost = (newPost) => axios.post(url, newPost);
+export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
+export const deletePost = (id) => axios.delete(`${url}/${id}`);
+export const likePost = (id) => axios.patch(`${url}/${id}/likePost`);
+>>>>>>> parent of eb89913... pushing PART_3
