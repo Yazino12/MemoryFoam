@@ -31,7 +31,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     if (isSignup) {
       dispatch(signup(form, history));
     } else {
@@ -52,13 +52,13 @@ const SignUp = () => {
     }
   };
 
-  const googleError = () => alert('Google Sign In was unsuccessful. Try again later');
+  const googleError = () => console.log('Google Sign In was unsuccessful. Try again later');
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   return (
     <Container component="main" maxWidth="xs">
-      <Paper className={classes.paper} elevation={3}>
+      <Paper className={classes.paper} elevation={6}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
@@ -79,10 +79,10 @@ const SignUp = () => {
             { isSignup ? 'Sign Up' : 'Sign In' }
           </Button>
           <GoogleLogin
-            clientId="14540009489-6puth7n8ccslebh2f41fgkfkbiib7lbs.apps.googleusercontent.com"
+            clientId="564033717568-bu2nr1l9h31bhk9bff4pqbenvvoju3oq.apps.googleusercontent.com"
             render={(renderProps) => (
               <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
-                { isSignup ? 'Google Sign up' : 'Google Sign In' }
+                Google Sign In
               </Button>
             )}
             onSuccess={googleSuccess}

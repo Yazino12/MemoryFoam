@@ -1,4 +1,9 @@
+
 body {
-  background-color: #00aab0;
-  background-image: url("https://www.transparenttextures.com/patterns/cutcube.png");
-  }
+    background-color: #f7f8fc;
+}
+
+* {
+    /* font-family: 'Noto Sans JP' !important; */
+    font-family: 'Heebo', sans-serif !important;
+}
