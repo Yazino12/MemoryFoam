@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://memory-foam.herokuapp.com/posts";
+const url = "http://localhost:5000";
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
