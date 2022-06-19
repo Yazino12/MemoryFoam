@@ -22,9 +22,11 @@ export default makeStyles((theme) => ({
     flex: 1,
   },
   imageSection: {
+    width: '60%',
     marginLeft: '20px',
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0,
+      width: '100%',
     },
   },
   recommendedPosts: {
@@ -34,20 +36,6 @@ export default makeStyles((theme) => ({
     },
   },
   loadingPaper: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: '20px',
-    borderRadius: '15px',
-    height: '39vh',
-  },
-  commentsOuterContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
-  commentsInnerContainer: {
-    height: '200px',
-    overflowY: 'auto',
-    marginRight: '30px',
+    display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px', borderRadius: '15px', height: '39vh',
   },
 }));

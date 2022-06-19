@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AACA,KACI,wBACJ,CAEA,EAEI,wCACJ","file":"main.9516a8fc.chunk.css","sourcesContent":["\nbody {\n    background-color: #f7f8fc;\n}\n\n* {\n    /* font-family: 'Noto Sans JP' !important; */\n    font-family: 'Heebo', sans-serif !important;\n}"]}

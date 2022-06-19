@@ -66,4 +66,13 @@ export default makeStyles((theme) => ({
   actionDiv: {
     textAlign: 'center',
   },
+  noPosts: {
+    width: '10%',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#2541B2',
+    '@media (max-width: 976px)' : {
+      width: '30%'
+    }
+  },
 }));
