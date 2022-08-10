@@ -4,7 +4,11 @@
 
 > Memory Foam is a simple social media app that allows users to post interesting events that happened in their lives. This app is built using React, Node.js, Express, MongoDB.
 
-![MemoryFoam](https://yasin-warsame.netlify.app/images/1.png)
+<h2 align="center">
+  App Preview
+</h2>
+
+<img src="https://github.com/Yazino12/MemoryFoam/blob/dev/demo.png?raw=true" width="1200" height="500">
 
 ## Built With
 
