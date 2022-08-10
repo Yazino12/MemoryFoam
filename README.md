@@ -41,7 +41,7 @@ To get a local copy up and running follow these setup steps.
 
 ## LIVE APP
 
-- MemoryFoam: [MemoryFoam](https://memory-foam.netlify.app/posts)
+- Linke here: [MemoryFoam](https://memory-foam.netlify.app/posts)
 
 ## Authors
 
