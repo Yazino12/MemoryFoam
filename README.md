@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/-Yazino12-yellow)
 
-# MemoryFoam
+# Memory Foam
 
 > Memory Foam is a simple social media app that allows users to post interesting events that happened in their lives. This app is built using React, Node.js, Express, MongoDB.
 
